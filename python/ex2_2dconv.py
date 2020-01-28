@@ -14,7 +14,7 @@ def conv2d(img, kernel):
 im = cv2.imread("apple.png", 0)
 print(type(im[:][:][0]))
 
-lpf = np.ones((3, 3))
+lpf = np.ones((300, 300))
 
 lpf_image = sp.convolve(im, lpf, 'valid')
 
